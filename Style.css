@@ -177,3 +177,35 @@ footer {
     color: #57ccfd;
   }
   
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  form input,
+  form textarea {
+    padding: 10px;
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 6px;
+    color: #fff;
+  }
+  
+  form button {
+    padding: 10px;
+    background: #ff6b6b;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  form button:hover {
+    background: #e85c5c;
+  }
+  
