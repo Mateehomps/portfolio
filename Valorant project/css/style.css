@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+        
+        body {
+            font-family: 'silkscreen', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff5722, #3f51b5);
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 0.5em 0 0;
+            font-size: 1.2em;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #1f1f1f;
+            padding: 1em 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ff5722;
+        }
+        .content {
+            padding: 20px;
+        }
+        .update {
+            background: #1e1e1e;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .update:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+        .update h3 {
+            margin: 0 0 10px;
+            font-size: 1.5em;
+            color: #ff5722;
+        }
+        .timestamp {
+            font-size: 0.9em;
+            color: #9e9e9e;
+        }
+        .update p {
+            margin: 5px 0 0;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            nav a {
+                margin: 0 10px;
+            }
+        }
