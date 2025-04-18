@@ -126,10 +126,17 @@ h3 {
   font-size: 0.95rem;
 }
 
-#contact a {
-  color: #57ccfd;
+.cv-button {
+  display: inline-block;
+  background-color: #ff6b6b;
+  color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 6px;
   text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
 }
+
 
 #contact a:hover {
   text-decoration: underline;
@@ -157,19 +164,10 @@ footer {
     font-size: 1.2rem;
   }
   
-  .cv-button {
-    display: inline-block;
-    background-color: #ff6b6b;
-    color: #fff;
-    padding: 12px 25px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s ease;
-  }
+  
   
   .cv-button:hover {
-    background-color: #e85c5c;
+    background-color: #f03232;
   }
   
   #visits {
@@ -208,4 +206,85 @@ footer {
   form button:hover {
     background: #e85c5c;
   }
-  
+    
+  /* Social medias */ 
+
+ ul {
+  list-style: none;
+}
+
+.Social-Media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Social-Media .icon-content {
+  margin: 0 10px;
+  position: relative;
+}
+.Social-Media .icon-content .tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.Social-Media .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -50px;
+}
+.Social-Media .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #4d4d4d;
+  background-color: #000000;
+  transition: all 0.3s ease-in-out;
+}
+.Social-Media .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+.Social-Media .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+}
+.Social-Media .icon-content a:hover {
+  color: #e85c5c;
+}
+.Social-Media .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.Social-Media .icon-content a:hover .filled {
+  height: 100%;
+}
+
+.Social-Media .icon-content a[data-social="linkedin"] .filled,
+.Social-Media .icon-content a[data-social="linkedin"] ~ .tooltip {
+  background-color: #e85c5c;
+}
+
+.Social-Media .icon-content a[data-social="github"] .filled,
+.Social-Media .icon-content a[data-social="github"] ~ .tooltip {
+  background-color: #e85c5c;
+}
